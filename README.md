@@ -92,17 +92,18 @@ python manage.py runserver
 
 ## Estrutura do Projeto
 
-FitLife/
+```text
+fitlife-gestao-de-academia/
 │
-├── README.md
-├── app/
-├── database/
-├── docs/
-├── static/
-├── templates/
-├── manage.py
-└── requirements.txt
+├──config/
+├──docs/
+├──fitlife/
+├──manage.py
+├──requirements.txt
+└──README.md
+```
 
+---
 ## Gerenciamento do Projeto
 
 O desenvolvimento foi organizado utilizando a metodologia Kanban por meio da ferramenta Trello.

@@ -47,9 +47,36 @@ Muitas academias realizam o controle de alunos, pagamentos e turmas de forma man
 
 ## Instruções de Instalação
 
-### Clonar o Repositório
+## Pré-requisitos
+- Python 3.10+
+- Git
 
-git clone 
+## Instalação
+
+### 1. Clone o repositório
+git clone (https://github.com/ruanhilariorj1/fitlife-gestao-de-academia)
+cd proj_django
+
+### 2. Crie e ative o ambiente virtual
+python -m venv .venv
+
+### Windows
+.venv\Scripts\activate
+
+### Linux/Mac
+source .venv/bin/activate
+
+### 3. Instale as dependências
+pip install -r requirements.txt
+
+### 4. Aplique as migrações do banco de dados
+python manage.py migrate
+
+### 5. Crie um superusuário
+python manage.py createsuperuser
+
+### 6. (Opcional) Colete os arquivos estáticos
+python manage.py collectstatic
 
 ## Instruções de Execução
 

@@ -10,11 +10,32 @@ Muitas academias realizam o controle de alunos, pagamentos e turmas de forma man
 
 ## Tecnologias Utilizadas
 
-- Python 
-- Django
-- HTML
-- GitHub
-- Trello
+### Backend
+- Python 3.13
+- Django 6.0.6
+- SQLite (banco de dados em desenvolvimento)
+
+### Frontend
+- HTML5 + CSS3
+- Django Templates (sistema de templates nativo)
+- Tabler Icons (biblioteca de ícones via CDN)
+
+### Autenticação e Autorização
+- Django Auth (sistema nativo de autenticação)
+- Grupos e Permissões do Django
+
+### Interface Admin
+- Django Admin
+- Jazzmin (tema para o painel administrativo)
+
+### Ambiente e Ferramentas
+- Python venv (ambiente virtual)
+- Git + GitHub (versionamento)
+- VS Code (editor de código)
+- Docker (containerização)
+
+### Gerenciamento de Tarefas
+- Trello (organização do backlog e acompanhamento das tarefas)
 
 ## Integrantes
 
@@ -44,8 +65,6 @@ Muitas academias realizam o controle de alunos, pagamentos e turmas de forma man
 - Cadastro de modalidades
 - Gerenciamento de turmas
 - Inscrição de alunos
-
-## Instruções de Instalação
 
 ## Pré-requisitos
 - Python 3.10+

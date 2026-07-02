@@ -338,9 +338,25 @@
         <a href="{% url 'admin:index' %}">
             <i class="ti ti-settings"></i> Admin
         </a>
-        <a href="{% url 'logout' %}">
-            <i class="ti ti-logout"></i> Sair
-        </a>
+        <form method="post" action="{% url 'logout' %}" style="margin: 0;">
+            {% csrf_token %}
+            <button type="submit" style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #777;
+                font-size: 13px;
+                text-decoration: none;
+                padding: 6px 10px;
+                border-radius: 8px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            ">
+                <i class="ti ti-logout"></i> Sair
+            </button>
+        </form>
     </div>
 </aside>
 

@@ -152,7 +152,7 @@ python manage.py runserver
 ![Cadastro de Turmas](docs/telas/cadastro_turma.png)
 
 ### Detalhe da Turma
-![Detalhe da Turma](docs/telas/detalhe_turma.png)
+![Detalhe da Turma](docs/telas/detalhe_tuma.png)
 
 ### Editar Turma
 ![Editar Turma](docs/telas/editar_turma.png)

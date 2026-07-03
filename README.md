@@ -197,3 +197,4 @@ As atividades foram distribuídas em backlog, tarefas em andamento e tarefas con
 ## Documentação
 
 A documentação completa do projeto está disponível em:
+https://github.com/ruanhilariorj1/fitlife-gestao-de-academia/tree/main/docs

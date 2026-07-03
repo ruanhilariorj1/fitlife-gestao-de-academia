@@ -183,6 +183,9 @@ O desenvolvimento foi organizado utilizando a metodologia Kanban por meio da fer
 
 As atividades foram distribuídas em backlog, tarefas em andamento e tarefas concluídas para facilitar o acompanhamento da evolução do projeto.
 
+### Trello
+![Trello](docs/telas/trello.png)
+
 ## Documentação
 
 A documentação completa do projeto está disponível em:

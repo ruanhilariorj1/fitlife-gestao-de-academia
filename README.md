@@ -109,6 +109,21 @@ python manage.py runserver
 
 ## Telas do Sistema
 
+### Login
+![Login](docs/telas/login_fitlife.png)
+
+### Lista de Alunos
+![Lista de Alunos](docs/telas/lista_alunos.png)
+
+### Cadastro de Alunos
+![Cadastro de Alunos](docs/telas/cadastro_aluno.png)
+
+### Detalhe do Aluno
+![Detalhe do Aluno](docs/telas/detalhe_aluno.png)
+
+### Editar Aluno
+![Editar Aluno](docs/telas/editar_aluno.png)
+
 ## Estrutura do Projeto
 
 ```text

@@ -8,11 +8,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
+from django.views.defaults import permission_denied
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', auth_views.LoginView.as_view(), name='login'),
     path('logout/', auth_views.LogoutView.as_view(next_page='login'), name='logout'),
     path('', include('fitlife.urls')),
-    path('contas/', include ('django.contrib.auth.urls')),
 ]
+
+# Forçar página 403 mesmo em DEBUG
+handler403 = 'django.views.defaults.permission_denied'

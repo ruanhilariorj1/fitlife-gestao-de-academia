@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Aluno, Plano, ContratoPlan, Pagamento, Fatura, Modalidade, Turma, Inscricao, Unidade, Professor
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import permission_required
+from django.contrib import messages
 
 # =============================================================================
 # ALUNOS
@@ -57,7 +58,7 @@ def cadastrar_aluno(request):
             e_mail         = e_mail,
             restricoes     = restricoes
         )
-
+        messages.success(request, 'Aluno cadastrado com sucesso!')
         return redirect('listar_alunos')
 
     return render(request, 'fitlife/cadastrar_aluno.html')
@@ -76,7 +77,7 @@ def editar_aluno(request, cpf):
         aluno.e_mail          = request.POST.get('e_mail')
         aluno.restricoes      = request.POST.get('restricoes')
         aluno.save()
-
+        messages.success(request, 'Aluno atualizado com sucesso!')
         return redirect('listar_alunos')
 
     return render(
@@ -105,6 +106,7 @@ def excluir_aluno(request, cpf):
 
     if request.method == 'POST':
         aluno.delete()
+        messages.success(request, 'Aluno excluído com sucesso!')
         return redirect('listar_alunos')
 
     return render(
@@ -169,7 +171,7 @@ def criar_pagamento(request):
             vencimento      = vencimento,
             status_pag      = status_pag
         )
-
+        messages.success(request, 'Pagamento registrado com sucesso!')
         return redirect('listar_pagamentos')
 
     contratos = ContratoPlan.objects.all()
@@ -186,7 +188,7 @@ def editar_pagamento(request, cod_pagamento):
         pagamento.vencimento      = request.POST.get('vencimento')
         pagamento.status_pag      = request.POST.get('status_pag')
         pagamento.save()
-
+        messages.success(request, 'Pagamento atualizado com sucesso!')
         return redirect('listar_pagamentos')
 
     return render(
@@ -249,6 +251,7 @@ def criar_turma(request):
             cref_professor = Professor.objects.get(pk=request.POST.get('cref_professor')),
             capacidade     = request.POST.get('capacidade'),
         )
+        messages.success(request, 'Turma criada com sucesso!')
         return redirect('listar_turmas')
 
     return render(request, 'fitlife/criar_turma.html', {
@@ -268,7 +271,7 @@ def editar_turma(request, cod_turma):
         turma.cref_professor = Professor.objects.get(pk=request.POST.get('cref_professor'))
         turma.capacidade     = request.POST.get('capacidade')
         turma.save()
-
+        messages.success(request, 'Turma atualizada com sucesso!')
         return redirect('listar_turmas')
 
     return render(
@@ -304,6 +307,7 @@ def excluir_turma(request, cod_turma):
 
     if request.method == 'POST':
         turma.delete()
+        messages.success(request, 'Turma excluída com sucesso!')
         return redirect('listar_turmas')
 
     return render(
@@ -339,6 +343,7 @@ def inscrever_aluno(request, cod_turma):
             })
 
         Inscricao.objects.create(cpf_aluno=aluno, cod_turma=turma)
+        messages.success(request, 'Aluno inscrito com sucesso!')
         return redirect('detalhe_turma', cod_turma=cod_turma)
 
     return render(request, 'fitlife/inscrever_aluno.html', {
@@ -354,6 +359,7 @@ def cancelar_inscricao(request, cod_turma, cpf_aluno):
 
     if request.method == 'POST':
         inscricao.delete()
+        messages.success(request, 'Inscrição cancelada com sucesso!')
         return redirect('detalhe_turma', cod_turma=cod_turma)
 
     return render(

@@ -112,6 +112,9 @@ python manage.py runserver
 ### Login
 ![Login](docs/telas/login_fitlife.png)
 
+### Home/Dashboard
+![Home/Dashboard](docs/telas/home_dashboard.png)
+
 ### Lista de Alunos
 ![Lista de Alunos](docs/telas/lista_alunos.png)
 
@@ -123,6 +126,42 @@ python manage.py runserver
 
 ### Editar Aluno
 ![Editar Aluno](docs/telas/editar_aluno.png)
+
+### Excluir Aluno
+![Excluir Aluno](docs/telas/excluir_aluno.png)
+
+### Inscrever Aluno
+![Inscrever Aluno](docs/telas/inscrever_aluno.png)
+
+### Lista de Pagamentos
+![Lista de Pagamentos](docs/telas/lista_pagamentos.png)
+
+### Cadastro de Pagamentos
+![Cadastro de Pagamentos](docs/telas/cadastro_pagamento.png)
+
+### Detalhe do Pagamento
+![Detalhe do Pagamento](docs/telas/detalhe_pagamento.png)
+
+### Editar Pagamento
+![Editar Pagamento](docs/telas/editar_pagamento.png)
+
+### Lista de Turmas
+![Lista de Turmas](docs/telas/lista_turmas.png)
+
+### Cadastro de Turmas
+![Cadastro de Turmas](docs/telas/cadastro_turma.png)
+
+### Detalhe da Turma
+![Detalhe da Turma](docs/telas/detalhe_turma.png)
+
+### Editar Turma
+![Editar Turma](docs/telas/editar_turma.png)
+
+### Lista de Professores
+![Lista de Professores](docs/telas/lista_professores.png)
+
+### Lista de Unidades
+![Lista de Unidades](docs/telas/lista_unidades.png)
 
 ## Estrutura do Projeto
 

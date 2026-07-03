@@ -167,15 +167,21 @@ python manage.py runserver
 
 ```text
 fitlife-gestao-de-academia/
-│
-├──config/
-├──docs/
-|  └── telas/
-├──fitlife/
-|  └── templates/
-├──manage.py
-├──requirements.txt
-└──README.md
+├── config/          → configurações globais, urls principal, wsgi
+├── fitlife/         → app principal
+│   ├── models.py    → entidades e ORM
+│   ├── views.py     → lógica de negócio e controle de acesso
+│   ├── urls.py      → roteamento de URLs
+│   ├── admin.py     → registro no painel administrativo
+│   └── templates/
+│       └── fitlife/ → templates HTML da interface
+├── templates/
+│   └── registration/
+│       └── login.html
+├── docs/            → documentação técnica
+|   └── telas/
+├── manage.py
+└── requirements.txt
 ```
 
 ---

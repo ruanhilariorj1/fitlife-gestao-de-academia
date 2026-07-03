@@ -170,7 +170,9 @@ fitlife-gestao-de-academia/
 │
 ├──config/
 ├──docs/
+|  └── telas/
 ├──fitlife/
+|  └── templates/
 ├──manage.py
 ├──requirements.txt
 └──README.md
@@ -184,7 +186,7 @@ O desenvolvimento foi organizado utilizando a metodologia Kanban por meio da fer
 As atividades foram distribuídas em backlog, tarefas em andamento e tarefas concluídas para facilitar o acompanhamento da evolução do projeto.
 
 ### Trello
-![Trello](docs/trello.png)
+![Trello](docs/backlog_trello.png)
 
 ## Documentação
 
